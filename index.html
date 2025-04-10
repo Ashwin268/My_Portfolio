@@ -16,24 +16,53 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .nav-link {
+                transition: all 0.3s ease-in-out;
+            }
+
+            .nav-hover:hover {
+                color: #0d6efd !important;
+                border-bottom: 2px solid #0d6efd;
+            }
+
+            .navbar {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary"><img class="profile-icon" src="assets/Logo.png" width="65px" height="35px"></span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+                <div class="container px-4 px-lg-5">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/Logo.png" alt="Logo" width="65" height="35" class="d-inline-block align-text-top">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold text-uppercase">
+                            <li class="nav-item">
+                                <a class="nav-link px-3 nav-hover" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 nav-hover" href="resume.html">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 nav-hover" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3 nav-hover" href="contact.html">Contact</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
             <!-- Header-->
             <header class="py-5">
                 <div class="container px-5 pb-5">
@@ -45,9 +74,11 @@
                                 <h6 class="display-6 fw-bolder "><span class="text-gradient d-inline">Hey</span></h6>
                                 <h3 class="display-6 fw-bolder mb-5"><span class="text-gradient d-inline">I'm Ashwin</span></h3>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                                    <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder mx-sm-2" href="Projects.html#skills">Skills</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder mx-sm-2" href="resume.html#experience">Work Experience</a>
+                                    <a class="btn btn-primary btn-lg px-5 py-3 fs-6 fw-bolder mx-sm-2" href="resume.html">Resume</a>
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="col-xxl-7">
@@ -183,15 +214,22 @@
                             <div class="text-center my-5">
                                 <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Let me Introduce Myself</span></h2>
                                 <h3 class="display-7 fw-bolder"><span class="text-gradient d-inline">My name is Ashwin M Nayak</span></h3>
-                                <p class="text-muted"><p>
-                                    I'm a <strong>Software Engineer</strong> with hands-on experience in <strong>backend development</strong> using <strong>PHP, SQL, and JavaScript</strong>. I’ve played a key role in developing <strong>secure payment and ERP systems</strong>, including implementing <strong>data protection features</strong> and <strong>API integrations</strong>. Currently, I’m enhancing my skills in <strong>Python, Data Analytics, and Machine Learning</strong> to transition into a <strong>Data Analyst or AI Engineer</strong> role. I’m passionate about building <strong>reliable systems</strong> and using <strong>data to drive smart, impactful solutions</strong>.
+                                <p class="text-muted">
+                                    <p>
+                                        I'm a <strong>Software Engineer</strong> with hands-on experience in <strong>backend development</strong> using <strong>PHP, SQL, and JavaScript</strong>. I’ve played a key role in developing <strong>secure payment and ERP systems</strong>, including implementing <strong>data protection features</strong> and <strong>API integrations</strong>. Currently, I’m enhancing my skills in <strong>Python, Data Analytics, and Machine Learning</strong> to transition into a <strong>Data Analyst or AI Engineer</strong> role. I’m passionate about building <strong>reliable systems</strong> and using <strong>data to drive smart, impactful solutions</strong>.
                                     </p>
-                                    </p>
-                                <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="https://www.linkedin.com/in/ashwin-m-nayak-2180691b0/"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="https://github.com/Ashwin268"><i class="bi bi-github"></i></a>
-                                    <a class="text-gradient" href="https://www.instagram.com/ashwin_m_nayak/"><i class="bi bi-instagram"></i></a>
-                                </div>
+                                </p>
+                                <div class="d-flex justify-content-center gap-4">
+                                    <a class="btn btn-outline-primary d-flex align-items-center gap-2" href="https://www.linkedin.com/in/ashwin-m-nayak-2180691b0/" target="_blank">
+                                        <i class="bi bi-linkedin fs-4"></i><span class="small">LinkedIn</span>
+                                    </a>
+                                    <a class="btn btn-outline-dark d-flex align-items-center gap-2" href="https://github.com/Ashwin268" target="_blank">
+                                        <i class="bi bi-github fs-4"></i><span class="small">GitHub</span>
+                                    </a>
+                                    <a class="btn btn-outline-warning d-flex align-items-center gap-2" href="https://leetcode.com/u/ashwinnayak268/" target="_blank">
+                                        <i class="bi bi-code-slash fs-4"></i><span class="small">LeetCode</span>
+                                    </a>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -204,11 +242,15 @@
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0">Copyright &copy; Ashwin</div></div>
                     <div class="col-auto">
-                        <a class="small" href="https://www.linkedin.com/in/ashwin-m-nayak-2180691b0/">Linkedin</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="https://github.com/Ashwin268">Github</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="contact.html">Contact</a>
+                        <a class="text-gradient me-3" href="https://www.linkedin.com/in/ashwin-m-nayak-2180691b0/" target="_blank">
+                            <i class="bi bi-linkedin" style="font-size: 1.2rem;"></i>
+                        </a>
+                        <a class="text-gradient me-3" href="https://github.com/Ashwin268" target="_blank">
+                            <i class="bi bi-github" style="font-size: 1.2rem;"></i>
+                        </a>
+                        <a class="text-gradient me-3" href="contact.html">
+                            <i class="bi bi-envelope" style="font-size: 1.2rem;"></i>
+                        </a>
                     </div>
                 </div>
             </div>
